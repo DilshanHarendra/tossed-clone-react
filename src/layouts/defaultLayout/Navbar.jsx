@@ -1,12 +1,11 @@
-import React from "react";
-import logo from "../../assets/images/logo.png"
-import {openCloseMenu} from "../../store/actions/siteSettingsAction"
+import React from 'react';
+import logo from '../../assets/images/logo.png';
+import {openCloseMenu} from '../../store/actions/siteSettingsAction';
 
 function Navbar(){
     return(<div className=" shadow bg-white  border-b fixed w-full top-0 left-0 right-0 h-20 z-50">
         <div className="flex items-center justify-between container mx-auto md:px-0 px-3">
             <img src={logo} className="w-40" alt="logo"/>
-
             <div className="relative bg-gray-100 w-10  h-10 md:h-full  md:w-2/4 md:mx-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="absolute top-3 left-2 text-gray-400 h-5 w-5 " fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -35,5 +34,5 @@ function Navbar(){
 
 
         </div>
-    </div>)
-}export default Navbar
+    </div>);
+}export default Navbar;
