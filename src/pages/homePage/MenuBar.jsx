@@ -49,7 +49,7 @@ function MenuBar({active,setActive}){
 
 
     return(<div className="top-20 left-0 right-0 sticky h-20 shadow bg-white w-full   items-center flex  border-b  z-50 px-2 md:px-0">
-        <div className="flex items-center justify-between container mx-auto">
+        <div className="flex items-center justify-between container mx-auto px-4 xl:px-0">
             <ul className="flex  items-center w-3/4" >
                 {
                     primaryMenu.map((menu,index)=>(
