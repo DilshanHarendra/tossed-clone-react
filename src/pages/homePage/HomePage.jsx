@@ -26,7 +26,11 @@ function HomePage(){
         }else{
             setLoadingMenus(false);
         }
-
+        return ()=>{
+            window.removeEventListener('scroll',()=>{});
+            window.removeEventListener('wheel',()=>{});
+            window.removeEventListener('keydown',()=>{});
+        };
     },[]);
 
     function fetchMenus(){
@@ -43,7 +47,7 @@ function HomePage(){
         <HeroSection/>
         {menus.length>0&&  <MenuBar  setActive={m=>setActiveMenu({...m,event:'click'})} active={activeMenu}/>}
 
-        <div ref={div} className="flex flex-col md:flex-row items-start justify-between mt-4 container mx-auto">
+        <div ref={div} className="flex flex-col md:flex-row items-start justify-between mt-4 container mx-auto px-4 xl:px-0">
             <div className="md:w-4/6 w-full md:mr-4 overflow-y-auto">
                 <DealsSection/>
                 {
