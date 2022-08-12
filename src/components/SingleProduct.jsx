@@ -2,7 +2,6 @@ import React from 'react';
 import {openCloseProductModel} from '../store/actions/siteSettingsAction';
 import proDuctDefaultImage from '../assets/images/product-default.jpg';
 
-// eslint-disable-next-line react/prop-types
 function SingleProduct({type,product}){
 
 
